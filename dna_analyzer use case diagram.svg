@@ -1,3 +1,379 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="790px" height="1421px" viewBox="-0.5 -0.5 790 1421" content="&lt;mxfile host=&quot;www.draw.io&quot; modified=&quot;2019-09-30T16:29:31.037Z&quot; agent=&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36&quot; etag=&quot;8HKsN3NBqBej20_O6avA&quot; version=&quot;12.0.0&quot; type=&quot;device&quot; pages=&quot;1&quot;&gt;&lt;diagram id=&quot;5b65snYXGvkJNp7dz6iF&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);"><defs/><g><rect x="90" y="0" width="550" height="1420" fill="#ffffff" stroke="#000000" pointer-events="none"/><path d="M 40 104.14 L 130 69" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 40 118.87 L 154.68 186.73" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="25" cy="87.5" rx="7.5" ry="7.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><path d="M 25 95 L 25 120 M 25 100 L 10 100 M 25 100 L 40 100 M 25 120 L 10 140 M 25 120 L 40 140" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(13.5,147.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="23" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">user</div></div></foreignObject><text x="12" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">user</text></switch></g><ellipse cx="200" cy="69" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(142.5,62.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="114" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 115px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">create new sequence</div></div></foreignObject><text x="57" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">create new sequence</text></switch></g><path d="M 270 69 L 335 69 L 335 45 L 393.63 45" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 398.88 45 L 391.88 48.5 L 393.63 45 L 391.88 41.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(304.5,51.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="61" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;include&gt;&gt;</div></div></foreignObject><text x="31" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;include&gt;&gt;</text></switch></g><ellipse cx="470" cy="44.7" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(426.5,38.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="86" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 87px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">name sequence</div></div></foreignObject><text x="43" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">name sequence</text></switch></g><ellipse cx="470" cy="124.8" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(421.5,118.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="96" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 97px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">number sequence</div></div></foreignObject><text x="48" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">number sequence</text></switch></g><path d="M 200 104 L 340 104 L 340 125 L 393.63 125" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 398.88 125 L 391.88 128.5 L 393.63 125 L 391.88 121.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(280.5,98.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="61" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;include&gt;&gt;</div></div></foreignObject><text x="31" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;include&gt;&gt;</text></switch></g><path d="M 200 178.4 L 200 106.37" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 200 101.12 L 203.5 108.12 L 200 106.37 L 196.5 108.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(167.5,133.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="64" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;extends&gt;&gt;</div></div></foreignObject><text x="32" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;extends&gt;&gt;</text></switch></g><ellipse cx="200" cy="213.4" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(137.5,206.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="124" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 125px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">load sequence from file</div></div></foreignObject><text x="62" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">load sequence from file</text></switch></g><ellipse cx="400" cy="315" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(347.5,308.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="104" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 104px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">duplicate sequence</div></div></foreignObject><text x="52" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">duplicate sequence</text></switch></g><path d="M 342.04 300.72 L 242.89 105.68" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 240.51 101 L 246.8 105.65 L 242.89 105.68 L 240.56 108.82 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(258.5,193.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="64" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;extends&gt;&gt;</div></div></foreignObject><text x="32" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;extends&gt;&gt;</text></switch></g><path d="M 25 150 L 60 290 L 330 315" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="210" cy="405" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(197.5,398.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="24" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 25px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">slice</div></div></foreignObject><text x="12" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">slice</text></switch></g><path d="M 280 405 L 580 350 L 265.26 91.24" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 261.2 87.91 L 268.83 89.65 L 265.26 91.24 L 264.39 95.06 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(505.5,309.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="64" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;extends&gt;&gt;</div></div></foreignObject><text x="32" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;extends&gt;&gt;</text></switch></g><path d="M 20.41 126.38 L 30 390 L 140 405" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="210" cy="519.4" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(170.5,512.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="78" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 79px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">replace literals</div></div></foreignObject><text x="39" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">replace literals</text></switch></g><path d="M 26.8 102.02 L 0 519 L 140 519.4" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="220" cy="624.9" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(158.5,618.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="123" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 123px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">concatinate sequences</div></div></foreignObject><text x="62" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">concatinate sequences</text></switch></g><path d="M 290 624.9 L 450 580 L 423.57 355.9" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 422.95 350.69 L 427.25 357.23 L 423.57 355.9 L 420.3 358.05 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(413.5,541.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="64" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;extends&gt;&gt;</div></div></foreignObject><text x="32" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;extends&gt;&gt;</text></switch></g><path d="M 0 520 L 150 624.9" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="420" cy="703" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(409.5,696.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="20" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 21px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">pair</div></div></foreignObject><text x="10" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">pair</text></switch></g><path d="M 405.72 668.74 L 390 630 L 278.41 535.28" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 274.41 531.88 L 282.01 533.75 L 278.41 535.28 L 277.48 539.08 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(315.5,588.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="64" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">&lt;&lt;extends&gt;&gt;</div></div></foreignObject><text x="32" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;&lt;extends&gt;&gt;</text></switch></g><path d="M 0 520 L 40 680 L 352.66 714.69" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="210" cy="796.88" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(196.5,790.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="26" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 26px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">save</div></div></foreignObject><text x="13" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">save</text></switch></g><path d="M 40 680 L 40 800 L 140 796.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="210" cy="915" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(201.5,908.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="16" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 17px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">len</div></div></foreignObject><text x="8" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">len</text></switch></g><path d="M 40 800 L 50 920 L 140 915" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="210" cy="1035" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(198.5,1028.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="22" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 24px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">help</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">help</text></switch></g><path d="M 50 920 L 40 1035 L 140 1035" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="210" cy="1175" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(202.5,1168.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="14" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 16px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">list</div></div></foreignObject><text x="7" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">list</text></switch></g><ellipse cx="765" cy="957.5" rx="7.5" ry="7.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><path d="M 765 965 L 765 990 M 765 970 L 750 970 M 765 970 L 780 970 M 765 990 L 750 1010 M 765 990 L 780 1010" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(739.5,1017.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="50" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">database</div></div></foreignObject><text x="25" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">database</text></switch></g><path d="M 40 1030 L 40 1160 L 140 1175" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 765 980 L 590 1090 L 280 1175" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="220" cy="1305" rx="70" ry="35" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(209.5,1298.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="20" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 20px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">quit</div></div></foreignObject><text x="10" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">quit</text></switch></g><path d="M 40 1160 L 40 1320 L 150 1305" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
+<!-- Generated by Microsoft Visio, SVG Export dna_analyzer use case diagram.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="8.13542in" height="14.8125in"
+		viewBox="0 0 585.75 1066.5" xml:space="preserve" color-interpolation-filters="sRGB" class="st9">
+	<v:documentProperties v:langID="8192" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:butt;stroke-width:0.75}
+		.st2 {fill:none}
+		.st3 {stroke:#000000;stroke-linecap:butt;stroke-width:0.75}
+		.st4 {fill:none;stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st5 {fill:#000000;font-family:Helvetica;font-size:0.75em}
+		.st6 {stroke:#000000;stroke-dasharray:3,1.5;stroke-linecap:butt;stroke-width:0.75}
+		.st7 {fill:#000000;stroke:#000000;stroke-linecap:butt;stroke-width:0.75}
+		.st8 {fill:#000000;font-family:Helvetica;font-size:0.687492em}
+		.st9 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Page-1</title>
+		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
+		<g id="group1-1" transform="translate(0.75,-0.75)" v:mID="1" v:groupContext="group">
+			<title>Sheet.1</title>
+			<g id="shape2-2" v:mID="2" v:groupContext="shape" transform="translate(67.5,0)">
+				<title>Sheet.2</title>
+				<rect x="0" y="1.50002" width="412.5" height="1065" class="st1"/>
+			</g>
+			<g id="shape3-4" v:mID="3" v:groupContext="shape" transform="translate(30,-986.895)">
+				<title>Sheet.3</title>
+				<path d="M0 1066.5 L67.5 1040.15 L0 1066.5 Z" class="st2"/>
+				<path d="M0 1066.5 L67.5 1040.15" class="st3"/>
+			</g>
+			<g id="shape4-7" v:mID="4" v:groupContext="shape" transform="translate(30,-924.952)">
+				<title>Sheet.4</title>
+				<path d="M0 1015.61 L86.01 1066.5 L0 1015.61 Z" class="st2"/>
+				<path d="M0 1015.61 L86.01 1066.5" class="st3"/>
+			</g>
+			<g id="shape5-10" v:mID="5" v:groupContext="shape" transform="translate(13.125,-993.75)">
+				<title>Sheet.5</title>
+				<ellipse cx="5.625" cy="1060.88" rx="5.625" ry="5.625" class="st1"/>
+			</g>
+			<g id="shape6-12" v:mID="6" v:groupContext="shape" transform="translate(7.5,-960)">
+				<title>Sheet.6</title>
+				<path d="M11.25 1032.75 L11.25 1051.5 L11.25 1032.75 ZM11.25 1036.5 L0 1036.5 L11.25 1036.5 ZM11.25 1036.5 L22.5
+							 1036.5 L11.25 1036.5 ZM11.25 1051.5 L0 1066.5 L11.25 1051.5 ZM11.25 1051.5 L22.5 1066.5 L11.25 1051.5
+							 Z" class="st2"/>
+				<path d="M11.25 1032.75 L11.25 1051.5M11.25 1036.5 L0 1036.5M11.25 1036.5 L22.5 1036.5M11.25 1051.5 L0 1066.5M11.25
+							 1051.5 L22.5 1066.5" class="st3"/>
+			</g>
+			<g id="shape7-15" v:mID="7" v:groupContext="shape" transform="translate(1.475,-943.05)">
+				<title>Sheet.7</title>
+				<desc>user</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="18.025" cy="1061.1" width="36.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="36.05" height="10.8" class="st4"/>
+				<text x="9.27" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>user</text>			</g>
+			<g id="shape8-18" v:mID="8" v:groupContext="shape" transform="translate(97.5,-987)">
+				<title>Sheet.8</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape9-20" v:mID="9" v:groupContext="shape" transform="translate(64.475,-1006.8)">
+				<title>Sheet.9</title>
+				<desc>create new sequence</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="85.525" cy="1061.1" width="171.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="171.05" height="10.8" class="st4"/>
+				<text x="42.75" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>create new sequence</text>			</g>
+			<g id="shape10-23" v:mID="10" v:groupContext="shape" transform="translate(202.5,-1013.25)">
+				<title>Sheet.10</title>
+				<path d="M0 1066.5 L48.75 1066.5 L48.75 1048.5 L92.72 1048.5 L0 1066.5 Z" class="st2"/>
+				<path d="M0 1066.5 L48.75 1066.5 L48.75 1048.5 L92.72 1048.5" class="st6"/>
+			</g>
+			<g id="shape11-26" v:mID="11" v:groupContext="shape" transform="translate(293.91,-1028.63)">
+				<title>Sheet.11</title>
+				<path d="M5.25 1063.88 L0 1066.5 L1.31 1063.88 L0 1061.25 L5.25 1063.88 Z" class="st7"/>
+			</g>
+			<g id="shape12-28" v:mID="12" v:groupContext="shape" transform="translate(206.6,-1016.02)">
+				<title>Sheet.12</title>
+				<desc>&#60;&#60;include&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.8" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="22.69" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;include&#62;&#62;</text>			</g>
+			<g id="shape13-31" v:mID="13" v:groupContext="shape" transform="translate(300,-1005.22)">
+				<title>Sheet.13</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape14-33" v:mID="14" v:groupContext="shape" transform="translate(293.975,-1024.8)">
+				<title>Sheet.14</title>
+				<desc>name sequence</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="58.525" cy="1061.1" width="117.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="117.05" height="10.8" class="st4"/>
+				<text x="26.5" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>name sequence</text>			</g>
+			<g id="shape15-36" v:mID="15" v:groupContext="shape" transform="translate(300,-945.15)">
+				<title>Sheet.15</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape16-38" v:mID="16" v:groupContext="shape" transform="translate(284.975,-964.8)">
+				<title>Sheet.16</title>
+				<desc>number sequence</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="67.525" cy="1061.1" width="135.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="135.05" height="10.8" class="st4"/>
+				<text x="31.5" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>number sequence</text>			</g>
+			<g id="shape17-41" v:mID="17" v:groupContext="shape" transform="translate(150,-971.25)">
+				<title>Sheet.17</title>
+				<path d="M0 1050.75 L105 1050.75 L105 1066.5 L145.22 1066.5 L0 1050.75 Z" class="st2"/>
+				<path d="M0 1050.75 L105 1050.75 L105 1066.5 L145.22 1066.5" class="st6"/>
+			</g>
+			<g id="shape18-44" v:mID="18" v:groupContext="shape" transform="translate(293.91,-968.625)">
+				<title>Sheet.18</title>
+				<path d="M5.25 1063.88 L0 1066.5 L1.31 1063.88 L0 1061.25 L5.25 1063.88 Z" class="st7"/>
+			</g>
+			<g id="shape19-46" v:mID="19" v:groupContext="shape" transform="translate(188.6,-980.775)">
+				<title>Sheet.19</title>
+				<desc>&#60;&#60;include&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.8" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="22.69" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;include&#62;&#62;</text>			</g>
+			<g id="shape20-49" v:mID="20" v:groupContext="shape" transform="translate(150,-931.2)">
+				<title>Sheet.20</title>
+				<path d="M0 1066.5 L0 1012.48 L0 1066.5 Z" class="st2"/>
+				<path d="M0 1066.5 L0 1012.48" class="st6"/>
+			</g>
+			<g id="shape21-52" v:mID="21" v:groupContext="shape" transform="translate(147.375,-983.91)">
+				<title>Sheet.21</title>
+				<path d="M2.62 1061.25 L5.25 1066.5 L2.62 1065.19 L0 1066.5 L2.62 1061.25 Z" class="st7"/>
+			</g>
+			<g id="shape22-54" v:mID="22" v:groupContext="shape" transform="translate(104.6,-954.525)">
+				<title>Sheet.22</title>
+				<desc>&#60;&#60;extends&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.8" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="21.32" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;extends&#62;&#62;</text>			</g>
+			<g id="shape23-57" v:mID="23" v:groupContext="shape" transform="translate(97.5,-878.7)">
+				<title>Sheet.23</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape24-59" v:mID="24" v:groupContext="shape" transform="translate(46.475,-898.8)">
+				<title>Sheet.24</title>
+				<desc>load sequence from file</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="103.525" cy="1061.1" width="207.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="207.05" height="10.8" class="st4"/>
+				<text x="57" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>load sequence from file</text>			</g>
+			<g id="shape25-62" v:mID="25" v:groupContext="shape" transform="translate(247.5,-802.5)">
+				<title>Sheet.25</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape26-64" v:mID="26" v:groupContext="shape" transform="translate(218.975,-822.3)">
+				<title>Sheet.26</title>
+				<desc>duplicate sequence</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="81.025" cy="1061.1" width="162.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="162.05" height="10.8" class="st4"/>
+				<text x="42.25" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>duplicate sequence</text>			</g>
+			<g id="shape27-67" v:mID="27" v:groupContext="shape" transform="translate(182.168,-839.46)">
+				<title>Sheet.27</title>
+				<path d="M74.36 1066.5 L0 920.22 L74.36 1066.5 Z" class="st2"/>
+				<path d="M74.36 1066.5 L0 920.22" class="st6"/>
+			</g>
+			<g id="shape28-70" v:mID="28" v:groupContext="shape" transform="translate(180.383,-983.385)">
+				<title>Sheet.28</title>
+				<path d="M0 1060.64 L4.72 1064.12 L1.79 1064.15 L0.04 1066.5 L0 1060.64 Z" class="st7"/>
+			</g>
+			<g id="shape29-72" v:mID="29" v:groupContext="shape" transform="translate(172.85,-909.525)">
+				<title>Sheet.29</title>
+				<desc>&#60;&#60;extends&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.8" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="21.32" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;extends&#62;&#62;</text>			</g>
+			<g id="shape30-75" v:mID="30" v:groupContext="shape" transform="translate(18.75,-828.75)">
+				<title>Sheet.30</title>
+				<path d="M0 942.75 L26.25 1047.75 L228.75 1066.5 L0 942.75 Z" class="st2"/>
+				<path d="M0 942.75 L26.25 1047.75 L228.75 1066.5" class="st3"/>
+			</g>
+			<g id="shape31-78" v:mID="31" v:groupContext="shape" transform="translate(105,-735)">
+				<title>Sheet.31</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape32-80" v:mID="32" v:groupContext="shape" transform="translate(134.975,-754.8)">
+				<title>Sheet.32</title>
+				<desc>slice</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="22.525" cy="1061.1" width="45.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="45.05" height="10.8" class="st4"/>
+				<text x="13.52" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>slice</text>			</g>
+			<g id="shape33-83" v:mID="33" v:groupContext="shape" transform="translate(198.945,-761.25)">
+				<title>Sheet.33</title>
+				<path d="M11.06 1066.5 L236.05 1025.25 L0 831.18 L11.06 1066.5 Z" class="st2"/>
+				<path d="M11.06 1066.5 L236.05 1025.25 L0 831.18" class="st6"/>
+			</g>
+			<g id="shape34-86" v:mID="34" v:groupContext="shape" transform="translate(195.9,-993.705)">
+				<title>Sheet.34</title>
+				<path d="M0 1061.14 L5.72 1062.44 L3.04 1063.64 L2.39 1066.5 L0 1061.14 Z" class="st7"/>
+			</g>
+			<g id="shape35-88" v:mID="35" v:groupContext="shape" transform="translate(358.1,-822.525)">
+				<title>Sheet.35</title>
+				<desc>&#60;&#60;extends&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.81" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="21.32" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;extends&#62;&#62;</text>			</g>
+			<g id="shape36-91" v:mID="36" v:groupContext="shape" transform="translate(15.3075,-761.25)">
+				<title>Sheet.36</title>
+				<path d="M0 857.54 L7.19 1055.25 L89.69 1066.5 L0 857.54 Z" class="st2"/>
+				<path d="M0 857.54 L7.19 1055.25 L89.69 1066.5" class="st3"/>
+			</g>
+			<g id="shape37-94" v:mID="37" v:groupContext="shape" transform="translate(105,-649.2)">
+				<title>Sheet.37</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape38-96" v:mID="38" v:groupContext="shape" transform="translate(85.475,-669.3)">
+				<title>Sheet.38</title>
+				<desc>replace literals</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="72.025" cy="1061.1" width="144.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="144.05" height="10.8" class="st4"/>
+				<text x="43.01" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>replace literals</text>			</g>
+			<g id="shape39-99" v:mID="39" v:groupContext="shape" transform="translate(1.59872E-13,-675.45)">
+				<title>Sheet.39</title>
+				<path d="M20.1 753.47 L0 1066.2 L105 1066.5 L20.1 753.47 Z" class="st2"/>
+				<path d="M20.1 753.47 L0 1066.2 L105 1066.5" class="st3"/>
+			</g>
+			<g id="shape40-102" v:mID="40" v:groupContext="shape" transform="translate(112.5,-570.075)">
+				<title>Sheet.40</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape41-104" v:mID="41" v:groupContext="shape" transform="translate(71.225,-589.8)">
+				<title>Sheet.41</title>
+				<desc>concatinate sequences</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="94.525" cy="1061.1" width="189.06" height="10.8"/>
+				<rect x="0" y="1055.7" width="189.05" height="10.8" class="st4"/>
+				<text x="48.49" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>concatinate sequences</text>			</g>
+			<g id="shape42-107" v:mID="42" v:groupContext="shape" transform="translate(217.5,-596.325)">
+				<title>Sheet.42</title>
+				<path d="M0 1066.5 L120 1032.83 L100.18 864.75 L0 1066.5 Z" class="st2"/>
+				<path d="M0 1066.5 L120 1032.83 L100.18 864.75" class="st6"/>
+			</g>
+			<g id="shape43-110" v:mID="43" v:groupContext="shape" transform="translate(315.225,-796.462)">
+				<title>Sheet.43</title>
+				<path d="M1.99 1060.98 L5.21 1065.89 L2.45 1064.89 L0 1066.5 L1.99 1060.98 Z" class="st7"/>
+			</g>
+			<g id="shape44-112" v:mID="44" v:groupContext="shape" transform="translate(289.1,-648.525)">
+				<title>Sheet.44</title>
+				<desc>&#60;&#60;extends&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.81" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="21.32" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;extends&#62;&#62;</text>			</g>
+			<g id="shape45-115" v:mID="45" v:groupContext="shape" transform="translate(-8.79297E-14,-596.325)">
+				<title>Sheet.45</title>
+				<path d="M0 987.83 L112.5 1066.5 L0 987.83 Z" class="st2"/>
+				<path d="M0 987.83 L112.5 1066.5" class="st3"/>
+			</g>
+			<g id="shape46-118" v:mID="46" v:groupContext="shape" transform="translate(262.5,-511.5)">
+				<title>Sheet.46</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape47-120" v:mID="47" v:groupContext="shape" transform="translate(296.975,-531.3)">
+				<title>Sheet.47</title>
+				<desc>pair</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="18.025" cy="1061.1" width="36.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="36.05" height="10.8" class="st4"/>
+				<text x="10.52" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>pair</text>			</g>
+			<g id="shape48-123" v:mID="48" v:groupContext="shape" transform="translate(208.807,-563.445)">
+				<title>Sheet.48</title>
+				<path d="M95.48 1066.5 L83.69 1037.45 L0 966.41 L95.48 1066.5 Z" class="st2"/>
+				<path d="M95.48 1066.5 L83.69 1037.45 L0 966.41" class="st6"/>
+			</g>
+			<g id="shape49-126" v:mID="49" v:groupContext="shape" transform="translate(205.808,-660.69)">
+				<title>Sheet.49</title>
+				<path d="M0 1061.1 L5.7 1062.5 L3 1063.65 L2.3 1066.5 L0 1061.1 Z" class="st7"/>
+			</g>
+			<g id="shape50-128" v:mID="50" v:groupContext="shape" transform="translate(215.6,-613.275)">
+				<title>Sheet.50</title>
+				<desc>&#60;&#60;extends&#62;&#62;</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="45.4" cy="1061.55" width="90.8" height="9.9"/>
+				<rect x="0" y="1056.6" width="90.8" height="9.9" class="st4"/>
+				<text x="21.32" y="1064.02" class="st8" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;&#60;extends&#62;&#62;</text>			</g>
+			<g id="shape51-131" v:mID="51" v:groupContext="shape" transform="translate(-1.5028E-12,-528.983)">
+				<title>Sheet.51</title>
+				<path d="M0 920.48 L30 1040.48 L264.5 1066.5 L0 920.48 Z" class="st2"/>
+				<path d="M0 920.48 L30 1040.48 L264.5 1066.5" class="st3"/>
+			</g>
+			<g id="shape52-134" v:mID="52" v:groupContext="shape" transform="translate(105,-441.09)">
+				<title>Sheet.52</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape53-136" v:mID="53" v:groupContext="shape" transform="translate(139.475,-460.8)">
+				<title>Sheet.53</title>
+				<desc>save</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="18.025" cy="1061.1" width="36.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="36.05" height="10.8" class="st4"/>
+				<text x="8.52" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>save</text>			</g>
+			<g id="shape54-139" v:mID="54" v:groupContext="shape" transform="translate(30,-465)">
+				<title>Sheet.54</title>
+				<path d="M0 976.5 L0 1066.5 L75 1064.16 L0 976.5 Z" class="st2"/>
+				<path d="M0 976.5 L0 1066.5 L75 1064.16" class="st3"/>
+			</g>
+			<g id="shape55-142" v:mID="55" v:groupContext="shape" transform="translate(105,-352.5)">
+				<title>Sheet.55</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape56-144" v:mID="56" v:groupContext="shape" transform="translate(143.975,-372.3)">
+				<title>Sheet.56</title>
+				<desc>len</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="13.525" cy="1061.1" width="27.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="27.05" height="10.8" class="st4"/>
+				<text x="7.52" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>len</text>			</g>
+			<g id="shape57-147" v:mID="57" v:groupContext="shape" transform="translate(30,-375)">
+				<title>Sheet.57</title>
+				<path d="M0 976.5 L7.5 1066.5 L75 1062.75 L0 976.5 Z" class="st2"/>
+				<path d="M0 976.5 L7.5 1066.5 L75 1062.75" class="st3"/>
+			</g>
+			<g id="shape58-150" v:mID="58" v:groupContext="shape" transform="translate(105,-262.5)">
+				<title>Sheet.58</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape59-152" v:mID="59" v:groupContext="shape" transform="translate(139.475,-282.3)">
+				<title>Sheet.59</title>
+				<desc>help</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="18.025" cy="1061.1" width="36.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="36.05" height="10.8" class="st4"/>
+				<text x="9.52" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>help</text>			</g>
+			<g id="shape60-155" v:mID="60" v:groupContext="shape" transform="translate(30,-288.75)">
+				<title>Sheet.60</title>
+				<path d="M7.5 980.25 L0 1066.5 L75 1066.5 L7.5 980.25 Z" class="st2"/>
+				<path d="M7.5 980.25 L0 1066.5 L75 1066.5" class="st3"/>
+			</g>
+			<g id="shape61-158" v:mID="61" v:groupContext="shape" transform="translate(105,-157.5)">
+				<title>Sheet.61</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape62-160" v:mID="62" v:groupContext="shape" transform="translate(139.475,-177.3)">
+				<title>Sheet.62</title>
+				<desc>list</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="18.025" cy="1061.1" width="36.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="36.05" height="10.8" class="st4"/>
+				<text x="12.53" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>list</text>			</g>
+			<g id="shape66-163" v:mID="66" v:groupContext="shape" transform="translate(30,-183.75)">
+				<title>Sheet.66</title>
+				<path d="M0 957.75 L0 1055.25 L75 1066.5 L0 957.75 Z" class="st2"/>
+				<path d="M0 957.75 L0 1055.25 L75 1066.5" class="st3"/>
+			</g>
+			<g id="shape68-166" v:mID="68" v:groupContext="shape" transform="translate(112.5,-60)">
+				<title>Sheet.68</title>
+				<ellipse cx="52.5" cy="1040.25" rx="52.5" ry="26.25" class="st1"/>
+			</g>
+			<g id="shape69-168" v:mID="69" v:groupContext="shape" transform="translate(146.975,-79.8)">
+				<title>Sheet.69</title>
+				<desc>quit</desc>
+				<v:textBlock v:margins="rect(0,0,0,0)"/>
+				<v:textRect cx="18.025" cy="1061.1" width="36.05" height="10.8"/>
+				<rect x="0" y="1055.7" width="36.05" height="10.8" class="st4"/>
+				<text x="10.77" y="1063.8" class="st5" v:langID="3072"><v:paragraph v:horizAlign="1"/><v:tabList/>quit</text>			</g>
+			<g id="shape70-171" v:mID="70" v:groupContext="shape" transform="translate(30,-75)">
+				<title>Sheet.70</title>
+				<path d="M0 946.5 L0 1066.5 L82.5 1055.25 L0 946.5 Z" class="st2"/>
+				<path d="M0 946.5 L0 1066.5 L82.5 1055.25" class="st3"/>
+			</g>
+		</g>
+	</g>
+</svg>
