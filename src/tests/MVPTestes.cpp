@@ -26,3 +26,12 @@ TEST(DNA_Analyzer_Interface, analyzer_instantiation){
 
     DNAAnalyzerProcessor DNAAP ;  // instantiate a command processor object
 }
+
+
+TEST(DNA_Analyzer_Interface, analyzer_new_command_interface){
+    DNAAnalyzerProcessor DNAAP ;  // instantiate a command processor object
+    const char *input_c_sequence = "ATACTGCCTGAATAC" ;  // can only have A,C,G,T
+    const char *sequence_name    = "test_sequence_1" ;
+    DNAAP.new_sequence(input_c_sequence, sequence_name);  // HOW DO YOU TEST THIS FUNCTION?
+}
+

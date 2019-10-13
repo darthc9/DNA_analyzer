@@ -6,6 +6,9 @@ class DNAAnalyzerProcessor{
 public:
     DNAAnalyzerProcessor() {}
 
+    void new_sequence(const char *sequence, const char *name) {
+        throw "NOT YET IMPLEMENTED";
+    }
 };
 
 
