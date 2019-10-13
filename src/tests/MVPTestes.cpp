@@ -34,6 +34,26 @@ TEST(DNA_Analyzer_Interface, analyzer_new_command_interface){
     const char *sequence_name    = "test_sequence_1" ;
     DNAAP.new_sequence(input_c_sequence, sequence_name);
     // HOW DO YOU TEST THIS FUNCTION? --
-    // devide into functional unites, and test those!
+    // divide into small functional units, and test those!
+}
+
+
+
+// test function to check for legal nucleotide character
+// this is not TDD - you already have this function!!!!!
+#include "simple-dna-sequence/nucleotide.h"
+TEST(Simple_DNA_aequence, Nucleotide_isLegalLiteral){
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('a'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('A'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('c'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('C'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('g'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('G'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('t'));
+    EXPECT_TRUE(Nucleotide::isLegalLiteral('T'));
+
+    EXPECT_FALSE(Nucleotide::isLegalLiteral('x'));
+    EXPECT_FALSE(Nucleotide::isLegalLiteral('Y'));
+    EXPECT_FALSE(Nucleotide::isLegalLiteral('z'));
 }
 
