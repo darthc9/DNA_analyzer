@@ -7,6 +7,8 @@ set(Sources
         MVPTestes.cpp
         )
 
+include_directories(../DNAAnalyzer)
+
 add_executable(${this} ${Sources})
 
 target_link_libraries(${this} PUBLIC

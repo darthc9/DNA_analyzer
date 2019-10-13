@@ -6,8 +6,23 @@
 
 
 TEST(ExampleTest, Demonstrate_a_simple_test) {
-
     EXPECT_TRUE(true);
-
 }
 
+
+/**** Scenario to test / implement:
+ *
+ *  ADD A NEW SEQUENCE TO DNA_ANALYZER DATABASE:
+ *  - CREATE ANALYZER DATABASE
+ *  - ADD NEW INTERFACE WITH "NEW COMMAND" TO ANALYZER
+ *  - MOCK CLI CALL TO INTERFACE
+ *
+ */
+
+
+#include "dna_analyzer_processor.h"
+
+TEST(DNA_Analyzer_Interface, analyzer_instantiation){
+
+    DNAAnalyzerProcessor DNAAP ;  // instantiate a command processor object
+}

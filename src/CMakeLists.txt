@@ -16,7 +16,7 @@ set (Headers
 set(Sources
         DNAAnalyzer/DNAAnalyzer_CLI.cpp
         DNAAnalyzer/dnaa_command_parser.cpp
-        )
+        DNAAnalyzer/dna_analyzer_processor.cpp DNAAnalyzer/dna_analyzer_processor.h)
 
 add_library(${this} STATIC ${Sources} ${Headers})
 
