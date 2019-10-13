@@ -2,12 +2,12 @@
 
 
 
-// TEST( test_case_name, test_name
+// TEST( test_case_name, test_name )
 
 
-TEST(ExampleTest, Dempnstrate_a_simple_test) {
+TEST(ExampleTest, Demonstrate_a_simple_test) {
 
-    EXPECT_TRUE(false);
+    EXPECT_TRUE(true);
 
 }
 
