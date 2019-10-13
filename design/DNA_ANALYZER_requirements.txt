@@ -1,0 +1,331 @@
+Requirements Summery:
+==================================================================================================
+
+Sequence Creation Commands:     [NEW, LOAD, DUP]
+Sequence Manipulation Commands: [SLICE, REPLACE, CONCAT, PAIR]
+Sequence Management Commands:   [RENAME, DEL, REENUM, SAVE]
+Sequence Analysis Commands:     [LEN, FIND, COUNT, FINDALL]
+Command Results Labels:         [LABELS, CALC, MAX, SIZE, ATINDEX]
+Control Commands:               [HELP, SHOW, LIST, QUIT] 
+Batch Commands:                 [BATCH, RUN, BATCHLIST, BATCHSAVE, BATCHLOAD]
+
+
+ 
+
+--------------------------------------------------------------------------------------------------
+
+COMMAND "NEW":
+
+> cmd >>> new <sequence> [@<sequence_name>]
+
+Description:
+	creates a new (SEQUENCE) with (LABEL) or a (DEFAULT LABEL) and a sequential unique (ID)
+
+Example:
+> cmd >>> new ATACTGCCTGAATAC @short_seq
+[1] short_seq: ATACTGCCTGAATAC
+
+Notes:
+	Labels need to be saved and referenced to identify the sequence in subsequent commands.
+	default labels are seq1 ... seq#  (there should be a unique label for each sequence)
+	IDs are sequential and can be referenced to identify sequences in commands also.
+	
+
+Design Pattern:
+issue command "new" with parameters <sequence> and <name>      -- ? Factory for Command
+need to get a default name , and ID from DB                    -- ? getDefaultName() is a Strategy? + NullName
+
+
+--------------------------------------------------------------------------------------------------
+COMMAND "LOAD":
+
+> cmd >>> load <file_name>  [@<sequence_name>]
+
+Description:
+	loads a raw data sequence from <file_name> assigns it an (ID) and a (LABEL)
+
+Example:
+> cmd >>> load my_dna_seq.rawdna
+[14] my_dna_seq: AACGTTTTTGAACACCAGTCAACAACTAGCCA...TTG
+
+
+Notes:
+	(default name) here is according to file name and not "seq#"
+	output truncated to 40 chars
+	essentially the same as command "new" but reads seq from a file stream
+	
+Design Pattern:
+	an iterator / wrapper for the input stream with shared interface for string and file to read from
+	get_default_name seems to be a Strategy. or maybe it gets a default name suggestion as parameter?
+	is there a class or a package for default names? 
+	
+
+--------------------------------------------------------------------------------------------------
+COMMAND "DUP"  (duplicate)
+
+> cmd >>> dup <seq> [@<new_seq_name>]
+
+Description:
+	duplicates a given sequence. a sequence is referenced via (ID)  where <seq> = #iteger_id
+	or via (LABEL) where <seq> = @label  
+	a (LABEL) can be supplied for the new sequence or it defaults to the original label + _1 or _2.. 
+
+Notes:
+	another rule for the default (LABEL) [original (LABEL) + "_1"]
+	
+Design Pattern:	
+	needs a copy constructor or an adapter for the previous iterator interface
+
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+COMMAND "SLICE"
+
+> cmd >>> slice <seq> <from_ind> <to_ind> [: [@<new_seq_name>|@@]]
+
+Description: 
+	new_sequence = <seq>[from_ind:to_ind+1]  + a new name, possibly default
+	or new_sequence can be seq - in place
+	
+Example:
+> cmd >>> slice #1 4 9
+[1] short_seq: TGCCT
+
+Notes:
+	- in case of :@@ in operands (default LABEL) =  original_seq_label+ "_s1.."
+	- the slice in place can be done via decorator + iterator would would fit with the
+	  previous dup command that might also expect an iterator to function properly.
+	  slice_in_place = decorate with iterators
+	- the slice not in place can be done with the copy constructor already implemented
+	  in that case: 
+	  slice = dup(start, end)
+	
+	
+Design Pattern:
+	Decorator + Iterators
+	
+--------------------------------------------------------------------------------------------------
+COMMAND "REPLACE"
+
+> cmd >>> replace <seq> [<index> <new_letter>]+ [: [@<new_seq_name>|@@]]
+
+Description:
+	replace a (DNA CHAR) in a given index, replacement chars can be specified in a list of 
+	index and char. can create a new sequence or make changes in place.
+
+Notes:
+	- (default LABEL) has the postfix "_r1.."
+	- need to provice functionality to check if char is a valid Nucleotide char [ACGT]
+	- its another dup++ [like slice before]
+	
+Example:
+> cmd >>> replace @short_seq_s1 0 A 3 A : @repl_seq
+[20] repl_seq: AGCAT
+
+Design Pattern:
+	- don't think the Decorator can be of much use here and we do have op[] implemented already
+	- the problem might occur if an undo is requested.
+
+--------------------------------------------------------------------------------------------------
+COMMAND "CONCAT"
+> cmd >>> concat <seq_1> <seq_2> [: [@<new_seq_name>|@@]]
+
+Description:
+	if no new name is provided or @@ then it attaches [in place] <seq2> ... to the end of <seq1> 
+
+Notes: 
+	- @@ = seq1LABEL_seq2LABEL_c#   or  "conseq_#" if there is more than 2 sequences to concat
+
+Example:
+> cmd >>> concat #19 @repl_seq : @@
+[21] short_seq_s1_repl_seq_c1: TGCCTAGCAT
+
+> cmd >>> concat #1 #20 #20 #19 : @@
+[22] conseq_1: ATACTGCCTGAATACAGCATAGCATTGCCT
+
+
+Design Pattern:
+	- this is clearly a Composite [and mind/chain the iterators] however 
+
+
+--------------------------------------------------------------------------------------------------
+COMMAND "PAIR"
+
+> cmd >>> pair <seq> [: [@<new_seq_name>|@@]]
+
+Description: 
+	create a paired sequence - in place or a duplicate
+
+Notes:
+	- @@  = LABEL_p1
+	- dup++ , iterators will give paried result.
+	- iterators change direction and value 
+
+Example:
+> cmd >>> pair #21 : @@
+[24] short_seq_s1_repl_seq_c1_p1: ACGGATCGTA
+
+
+Design Pattern:
+	- decorate the DNAseq and add a state, mind the iterator. 
+	- what happens to the iterators of a sequence after it becomes paried?
+
+
+
+--------------------------------------------------------------------------------------------------	
+--------------------------------------------------------------------------------------------------
+COMMAND "RENAME"
+
+> cmd >>> rename <seq> @<new_name>
+
+Description:
+	- replace (LABEL) of a given (SEQUENCE) with a new (LABEL)
+	
+Notes:
+	- error message in case label is already taken (EXCEPTION)?
+	
+	
+--------------------------------------------------------------------------------------------------
+COMMAND "DEL"
+
+> cmd >>> del <seq>
+
+Description: 
+	- deletes sequence from memory. a confirmation message needs to be printed.
+	
+Notes:
+	- the CLI is in charge of the confirmation message. 
+	- the ANALYZER part will not require confirmation on the other hand.
+	- reversible? 
+	- CLI prompt changes for confirmation.
+	- CLI must be able to query DB to be able to print seq and confirm it exists
+
+Example:
+> cmd >>> del #23
+Do you really want to delete conseq_1_1: ATACTGCCTGAATACAGCATAGCATTGCCT?
+Please confirm by 'y' or 'Y', or cancel by 'n' or 'N'.
+> confirm >>> x
+You have typed an invalid response. Please either confirm by 'y'/'Y', or cancel by 'n'/'N'.
+> confirm >>> Y
+Deleted: [23] conseq_1_1: ATACTGCCTGAATACAGCATAGCATTGCCT
+
+
+Design Pattern:
+	- IDK!
+	
+
+--------------------------------------------------------------------------------------------------
+COMMAND "REENUM"
+
+> cmd >>> reenum
+
+Description:
+	- re-enumerate all the sequences in the database
+	
+Notes:
+	- all the functionality is in the ANALYZER. the CLI needs not confirm the command.
+	
+
+
+
+--------------------------------------------------------------------------------------------------	
+COMMAND "SAVE"
+
+> cmd >>> save <seq> [<filename>]
+
+Description:
+	- Save the raw data of the sequence to a file. the formate should be able to be read by LOAD
+	
+Design Pattern:
+	- Iterator
+
+Notes:
+	- <seq> is only a label or an id? can it directly have a sequence to save?
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+COMMAND "LEN"
+
+> cmd >>> len <seq>
+
+Description:
+	- print seq name
+	
+Notes: 
+	- <seq> is only an (ID) or a (LABEL)
+	- the result needs to be labeled and saved! where? in the CLI?
+
+Example:
+
+> cmd >>> len #34
+10
+
+
+--------------------------------------------------------------------------------------------------
+COMMAND "FIND"
+
+> cmd >>> find <seq> <expressed_sub_seq>
+OR
+> cmd >>> find <seq_to_find_in> <seq_to_be_found>
+
+Description:
+	-  finds a sub-sequence within a sequence.
+	
+	
+Notes:
+	- here we are explicitly asked to handle expressed sequences that are not references
+	- if we create a temp then it might take an id which we can't afford?
+	- remember that the result should also be labeled and saved
+	- can a (result label) and a (sequence lable) have the same value?
+	
+		
+--------------------------------------------------------------------------------------------------
+COMMAND "FINDALL"
+
+> cmd >>> findall <seq> <expressed_sub_seq>
+OR
+> cmd >>> findall <seq_to_find_in> <seq_to_be_found>
+
+
+Description:
+	- returns a list of indexes of all the occurrences of seq2 in seq1.
+	
+
+Notes:
+	- result here needs to be saved and labled but 
+	- result here is a list of integers and not a single integer like before
+	- can this label be saved in the same data structure? should it?
+	
+	
+Example:
+
+> cmd >>> findall #11 GA
+8 16
+> cmd >>> findall #11 AA
+1 9 17
+
+
+
+--------------------------------------------------------------------------------------------------
+COMMAND "COUNT"
+
+> cmd >>> count <seq> <expressed_sub_seq>
+OR
+> cmd >>> count <seq_to_find_in> <seq_to_be_found>
+
+Description:
+	- count the number of occurrences
+	
+	
+Notes:
+	
+	- simply a SIZE COMMAND over the result of findall command
+	- remember to save __ last label and ## last sequence!
+	
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------	
