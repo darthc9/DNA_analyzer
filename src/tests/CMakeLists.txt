@@ -10,6 +10,7 @@ set(Sources
 add_executable(${this} ${Sources})
 
 target_link_libraries(${this} PUBLIC
+        gtest
         gtest_main
         DNAAnalyzer
         )
