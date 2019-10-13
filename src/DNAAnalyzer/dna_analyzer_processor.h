@@ -4,9 +4,7 @@
 // the main class that holds all the processing and data storing functionality:
 class DNAAnalyzerProcessor{
 public:
-    DNAAnalyzerProcessor(){
-        throw "NOT YET IMPLEMENTED";
-    }
+    DNAAnalyzerProcessor() {}
 
 };
 
