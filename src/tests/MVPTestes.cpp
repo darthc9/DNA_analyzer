@@ -48,7 +48,9 @@ TEST(DNA_Analyzer_functionality, instantiate_dna_sequence_object)
     const char *dnas_test_name = "dna_sequence_test_name" ;
     const char *input_sequence = "ATACTGCCTGAATAC" ;            // this is a valid sequence - no exception.
 
-    PCharInputStream is(input_sequence); // TODO: fix ambiguity !!!!
-    const I_DNASequence &dna_sequence = DNASequence(is);
+    PCharInputStream is(input_sequence);
+    const DNASequence dna_sequence1 = DNASequence(input_sequence); // TODO: fix ambiguity !!!! the problem is the implicit copy ctor. this demands immediate attention!
+    const DNASequence dna_sequence = DNASequence(is);
+    DNASequence newt(dna_sequence);
     DNASequence_NameAndID_Decorator DNA_Analyzer_Decorated_Data_object ( dna_sequence, dnas_test_name, dnas_test_ID );
 }
