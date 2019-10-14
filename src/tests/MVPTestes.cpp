@@ -48,6 +48,7 @@ TEST(DNA_Analyzer_functionality, instantiate_dna_sequence_object)
     const char *dnas_test_name = "dna_sequence_test_name" ;
     const char *input_sequence = "ATACTGCCTGAATAC" ;            // this is a valid sequence - no exception.
 
-    DNASequence dna_sequence ( input_sequence );
+    PCharInputStream is(input_sequence);
+    const I_DNASequence &dna_sequence = DNASequence(is);
     DNASequence_NameAndID_Decorator DNA_Analyzer_Decorated_Data_object ( dna_sequence, dnas_test_name, dnas_test_ID );
 }
