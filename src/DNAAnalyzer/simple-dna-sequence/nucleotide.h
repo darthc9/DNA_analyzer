@@ -1,7 +1,3 @@
-//
-// Created by Fadi on 14/09/2019.
-//
-
 #ifndef DNASEQUENCER_NUCLEOTIDE_H
 #define DNASEQUENCER_NUCLEOTIDE_H
 
@@ -9,9 +5,9 @@
 #include <string>
 #include <cctype>
 
-class bad_DNA_Seqeunce_Argument: public std::invalid_argument {
+class bad_DNA_Sequence_Argument: public std::invalid_argument {
 public:
-    bad_DNA_Seqeunce_Argument(const std::string& msg): std::invalid_argument(msg) {}
+    bad_DNA_Sequence_Argument(const std::string& msg): std::invalid_argument(msg) {}
     // TODO: TDB
 };
 
@@ -59,7 +55,7 @@ inline bool Nucleotide::isLegalLiteral(char dna_l){
 inline Nucleotide::Nucleotide(char literal ){
     m_DNA_literal = static_cast<char>(toupper(literal));  //TODO: implement your own toupper()
     if (!isLegalLiteral(m_DNA_literal)) {
-        throw bad_DNA_Seqeunce_Argument(std::string("invalid Nucleotide literal: ") + m_DNA_literal);
+        throw bad_DNA_Sequence_Argument(std::string("invalid Nucleotide literal: ") + m_DNA_literal);
     }
 }
 
