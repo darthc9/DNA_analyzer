@@ -5,7 +5,7 @@ set(this DNAAnalyzerTests)
 
 set(Sources
         MVPTestes.cpp
-        )
+        SimpleDNAsequenceTests.cpp)
 
 include_directories(../DNAAnalyzer)
 
