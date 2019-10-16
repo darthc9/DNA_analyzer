@@ -12,18 +12,31 @@
 #include "nucleotide.h"
 
 
-class DNASequence {
+class I_DNASequence {
+public:
+    // not adding constructors to interface
+
+    virtual I_DNASequence& operator=(const I_DNASequence &rhs) = 0;
+    virtual char operator[]( size_t pos) const; // TODO: add a non-const version that calls the const implementation.
+    virtual size_t length() const;
+
+    // no more functions needed at this point.
+};
+
+
+
+class DNASequence : public I_DNASequence {
 public:
 
-    DNASequence(const char *DNA_squence);
-    DNASequence(const std::string& DNA_squence);
-
     static const size_t npos = -1;  // not a legal position - (default parameter required for copy ct'or)
-    DNASequence(const DNASequence &dnas, size_t start_pos = 0 , size_t nucleotide_count = npos);
+
+    template <class T>
+    DNASequence(const T& indexed_input, size_t start_pos = 0 , size_t nucleotide_count = npos);
+
 
     virtual ~DNASequence();
 
-    DNASequence& operator=(const DNASequence &rhs) ;
+    I_DNASequence& operator=(const I_DNASequence &rhs) ;
 
     size_t length() const;
 
@@ -39,55 +52,56 @@ private:
 
 private:
 
-    template <class T> void init_nucleo_array(T arr, size_t len);
-
     friend std::istream& operator>>(std::istream& is, DNASequence& dnas_obj);
 
 };
 
-
-
-
-inline DNASequence::DNASequence(const char *DNA_squence) {
-    m_len = strlen(DNA_squence);
-    m_DNA_sequence = new Nucleotide[m_len] ;
-    init_nucleo_array(DNA_squence, m_len) ;
-}
-
-
-inline DNASequence::DNASequence(const std::string& DNA_squence){
-    m_len = DNA_squence.length() ;
-    m_DNA_sequence = new Nucleotide[m_len] ;
-    init_nucleo_array(DNA_squence, m_len) ;
-}
-
-template<class T>
-inline void DNASequence::init_nucleo_array(T arr, size_t len) {
-    try {
-        for (size_t i = 0; i < len; ++i) {
-            m_DNA_sequence[i] = arr[i];
-        }
-    }
-    catch ( bad_DNA_Seqeunce_Argument &) {
-        delete[] m_DNA_sequence ;
-        m_len = 0 ;
-        throw ;
-    }
-}
-
-
-inline DNASequence::DNASequence(const DNASequence &dnas,  size_t start_pos, size_t nucleotide_count) {
+template <class T>
+inline DNASequence::DNASequence (const T& indexed_input, size_t start_pos, size_t nucleotide_count) {
 
     if (npos == nucleotide_count) {
         // if no size supplied assume slice is the full length of the sequence
-        nucleotide_count = m_len = dnas.m_len ;
+        nucleotide_count = m_len = indexed_input.length() ;
     } else {
         m_len = nucleotide_count ;
     }
 
     m_DNA_sequence = new Nucleotide[nucleotide_count] ;
-    assert(start_pos + nucleotide_count <= dnas.length());
-    init_nucleo_array(dnas.m_DNA_sequence + start_pos, nucleotide_count) ;
+    assert(start_pos + nucleotide_count <= indexed_input.length());
+
+    try {
+        for (size_t i = start_pos; i < nucleotide_count; ++i) {
+            m_DNA_sequence[i] = indexed_input[i];
+        }
+    }
+    catch ( bad_DNA_Sequence_Argument &) {
+        delete[] m_DNA_sequence ;
+        m_len = 0 ;
+        throw ;
+    }
+
+}
+
+class PCharInputStream {
+public:
+    PCharInputStream (const char * input) : m_data(input) {} ;
+    virtual char operator[]( size_t pos) const { return  m_data[pos]; };
+    virtual size_t length() const  { return strlen(m_data);}
+private:
+    const char * m_data;
+};
+
+// TODO: what about a file stream? can it return a length() or does it need an iterator?
+
+
+
+// specialization of constructor template for T = char *
+typedef char* pchar;
+template <> DNASequence::DNASequence (const pchar& indexed_input, size_t start_pos, size_t nucleotide_count)
+: DNASequence(PCharInputStream(indexed_input), start_pos, nucleotide_count)
+{
+    // delegating constructors is a C++11 feature
+    // but I can't find a better solution to get rid of the code duplication.
 }
 
 
@@ -104,13 +118,15 @@ inline size_t DNASequence::length() const {
 }
 
 
-inline DNASequence& DNASequence::operator=(const DNASequence &rhs) {
+inline I_DNASequence& DNASequence::operator=(const I_DNASequence &rhs) {
     if (this != &rhs) {
         delete [] m_DNA_sequence;
         m_len = 0 ;
         m_len = rhs.length();
         m_DNA_sequence = new Nucleotide[m_len] ;
-        init_nucleo_array(rhs.m_DNA_sequence, m_len) ;
+        for (size_t i = 0; i < m_len; ++i) {
+            m_DNA_sequence[i] = rhs[i];
+        }
     }
     return *this;
 }
@@ -184,7 +200,7 @@ inline std::istream& operator>>(std::istream& is, DNASequence& dnas_obj)
 
             try {
                 dnas_obj.m_DNA_sequence[nucleo_index++] = Nucleotide(input_char);
-            } catch ( bad_DNA_Seqeunce_Argument &e) {
+            } catch ( bad_DNA_Sequence_Argument &e) {
                 dnas_obj.m_len = 0 ;
                 delete[] dnas_obj.m_DNA_sequence ;
                 dnas_obj.m_DNA_sequence = 0 ; // nullptr
