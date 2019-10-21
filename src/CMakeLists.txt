@@ -13,14 +13,14 @@ add_subdirectory(googletest)
 set (Headers
         DNAAnalyzer/dnaa_command_parser.h
         DNAAnalyzer/dna_analyzer_processor.h
-        DNAAnalyzer/simple-dna-sequence/nucleotide.h
+        DNAAnalyzer/dna-sequence/nucleotide.h
         )
 
 set(Sources
         DNAAnalyzer/DNAAnalyzer_CLI.cpp
         DNAAnalyzer/dnaa_command_parser.cpp
         DNAAnalyzer/dna_analyzer_processor.cpp
-        DNAAnalyzer/simple-dna-sequence/nucleotide.cpp
+        DNAAnalyzer/dna-sequence/nucleotide.cpp
         )
 
 add_library(${this} STATIC ${Sources} ${Headers})
