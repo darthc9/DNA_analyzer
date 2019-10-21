@@ -14,14 +14,14 @@ set (Headers
         DNAAnalyzer/dnaa_command_parser.h
         DNAAnalyzer/dna_analyzer_processor.h
         DNAAnalyzer/dna-sequence/nucleotide.h
-        )
+        DNAAnalyzer/decoratedDNAseq.h)
 
 set(Sources
         DNAAnalyzer/DNAAnalyzer_CLI.cpp
         DNAAnalyzer/dnaa_command_parser.cpp
         DNAAnalyzer/dna_analyzer_processor.cpp
         DNAAnalyzer/dna-sequence/nucleotide.cpp
-        )
+        DNAAnalyzer/decoratedDNAseq.cpp)
 
 add_library(${this} STATIC ${Sources} ${Headers})
 

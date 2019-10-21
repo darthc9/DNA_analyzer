@@ -17,8 +17,8 @@ public:
     // not adding constructors to interface
 
     virtual I_DNASequence& operator=(const I_DNASequence &rhs) = 0;
-    virtual char operator[]( size_t pos) const; // TODO: add a non-const version that calls the const implementation.
-    virtual size_t length() const;
+    virtual char operator[]( size_t pos) const = 0; // TODO: add a non-const version that calls the const implementation.
+    virtual size_t length() const  = 0;
 
     // no more functions needed at this point.
 };
