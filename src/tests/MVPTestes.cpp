@@ -40,7 +40,7 @@ TEST(DNA_Analyzer_Interface, analyzer_new_command_interface){
 // given a DNA_Sequence object (with name and ID) store it in database
 
 // given a name and a sequence of chars create a DNA_Sequence object.
-#include "simple-dna-sequence/DNAsequence.h"
+#include "dna-sequence/DNAsequence.h"
 TEST(DNA_Analyzer_functionality, instantiate_dna_sequence_object)
 {
     // move these into a fixture:

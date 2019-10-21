@@ -2,7 +2,7 @@
 
 // test function to check for legal nucleotide character
 // this is not TDD - you already have this function!!!!!
-#include "simple-dna-sequence/nucleotide.h"
+#include "dna-sequence/nucleotide.h"
 TEST(Simple_DNA_aequence, Nucleotide_isLegalLiteral){
 EXPECT_TRUE(Nucleotide::isLegalLiteral('a'));
 EXPECT_TRUE(Nucleotide::isLegalLiteral('A'));
