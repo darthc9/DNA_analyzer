@@ -30,8 +30,17 @@ public:
 
     static const size_t npos = -1;  // not a legal position - (default parameter required for copy ct'or)
 
-    template <class T>
-    DNASequence(const T& indexed_input, size_t start_pos = 0 , size_t nucleotide_count = npos);
+    // note:
+    // Destructors and copy constructors cannot be templates.
+    // If a template constructor is declared which could be instantiated with the type
+    // signature of a copy constructor, the implicitly-declared copy constructor is used instead.
+    // -- https://en.cppreference.com/w/cpp/language/member_template
+
+    DNASequence(const char *c_string);
+    DNASequence(const std::string& std_string);
+    // copy c'tor
+    DNASequence(const DNASequence& other, size_t start_pos = 0 , size_t nucleotide_count = npos);
+
 
 
     virtual ~DNASequence();
@@ -46,19 +55,24 @@ public:
     void convert_to_paired(); // convert this sequence to the paired sequence
 
 private:
+    // DATA MEMBERS:
     Nucleotide *m_DNA_sequence ;
     size_t      m_len;
 
+    // PRIVATE FUNCTIONS
+    // each of the constructors 'delegate' to the following template method:
+    template <class T>
+    void init_DNASequence(const T& indexed_input, size_t start_pos = 0 , size_t nucleotide_count = npos);
 
-private:
-
+    // FRIENDS
     friend std::istream& operator>>(std::istream& is, DNASequence& dnas_obj);
 
 };
 
-template <class T>
-inline DNASequence::DNASequence (const T& indexed_input, size_t start_pos, size_t nucleotide_count) {
 
+
+template<class T>
+void DNASequence::init_DNASequence(const T &indexed_input, size_t start_pos, size_t nucleotide_count) {
     if (npos == nucleotide_count) {
         // if no size supplied assume slice is the full length of the sequence
         nucleotide_count = m_len = indexed_input.length() ;
@@ -79,29 +93,34 @@ inline DNASequence::DNASequence (const T& indexed_input, size_t start_pos, size_
         m_len = 0 ;
         throw ;
     }
-
 }
+
 
 class PCharInputStream {
 public:
     PCharInputStream (const char * input) : m_data(input) {} ;
     virtual char operator[]( size_t pos) const { return  m_data[pos]; };
-    virtual size_t length() const  { return strlen(m_data);}
+    virtual size_t length() const  {
+        static const size_t length = strlen(m_data);
+        return length;
+    }
 private:
     const char * m_data;
 };
-
 // TODO: what about a file stream? can it return a length() or does it need an iterator?
 
 
+DNASequence::DNASequence(const char *c_string){
+    init_DNASequence(PCharInputStream(c_string));
+}
 
-// specialization of constructor template for T = char *
-typedef char* pchar;
-template <> DNASequence::DNASequence (const pchar& indexed_input, size_t start_pos, size_t nucleotide_count)
-: DNASequence(PCharInputStream(indexed_input), start_pos, nucleotide_count)
-{
-    // delegating constructors is a C++11 feature
-    // but I can't find a better solution to get rid of the code duplication.
+DNASequence::DNASequence(const std::string& std_string){
+    init_DNASequence(std_string);
+}
+
+// copy c'tor
+DNASequence::DNASequence(const DNASequence& other, size_t start_pos , size_t nucleotide_count){
+    init_DNASequence(other, start_pos, npos);
 }
 
 
@@ -117,7 +136,7 @@ inline size_t DNASequence::length() const {
     return m_len ;
 }
 
-
+// TODO: define op= using init..() ?
 inline I_DNASequence& DNASequence::operator=(const I_DNASequence &rhs) {
     if (this != &rhs) {
         delete [] m_DNA_sequence;
@@ -211,6 +230,8 @@ inline std::istream& operator>>(std::istream& is, DNASequence& dnas_obj)
     }
     return is;
 }
+
+
 
 
 inline bool operator==(const DNASequence &rhs, const DNASequence &lhs) {
